@@ -118,13 +118,13 @@ A strong response will:
 TaskFlow users spend 15+ minutes breaking down complex tasks like "Q4 roadmap planning" into actionable subtasks. Project managers report this as one of their top 3 weekly time sinks. This feature targets the "Overwhelmed PM" persona who manages 10+ projects.
 
 **Implementation Approach:**
-RAG + API calls. We'll retrieve the user's existing task patterns and project context, then use GPT-3.5 to generate subtask suggestions. We're NOT fine-tuning because:
+RAG + API calls. We'll retrieve the user's existing task patterns and project context, then use GPT-4o-mini to generate subtask suggestions. We're NOT fine-tuning because:
 1. We need it shipped in 2 weeks
 2. General task breakdown doesn't require domain-specific behavior
 3. RAG gives us personalization without training costs
 
 **Latency:**
-2-3 seconds expected (GPT-3.5 + retrieval). Acceptable because users invoke this explicitly via a button, not inline as they type.
+2-3 seconds expected (GPT-4o-mini + retrieval). Acceptable because users invoke this explicitly via a button, not inline as they type.
 
 ---
 
