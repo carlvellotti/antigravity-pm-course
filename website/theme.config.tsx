@@ -78,6 +78,7 @@ export default {
         <meta name="description" content={description} />
         
         <meta name="google-site-verification" content="Oenxq7BatQp09RlIUs43VkDpdoOQUWlUhqwxYxw49xQ" />
+        <meta name="google-site-verification" content="80PTD3OXCkGBAu9gIV-VbHpIFoO0yK8_eYUfA_NDoAw" />
 
         {/* Canonical URL */}
         <link rel="canonical" href={canonicalUrl} />
