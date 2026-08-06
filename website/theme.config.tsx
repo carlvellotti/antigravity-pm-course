@@ -76,8 +76,8 @@ export default {
         <title>{pageTitle}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
-        {/* TODO: Add Google site verification when ready */}
-        {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
+        
+        <meta name="google-site-verification" content="Oenxq7BatQp09RlIUs43VkDpdoOQUWlUhqwxYxw49xQ" />
 
         {/* Canonical URL */}
         <link rel="canonical" href={canonicalUrl} />
