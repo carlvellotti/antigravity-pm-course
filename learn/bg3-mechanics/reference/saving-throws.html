@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference: saving throws</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<p class="kicker">BG3 Mechanics · Reference</p>
+<h1>Saving throws</h1>
+<p class="lede">This sheet gives the Spell Save DC formula, the DC table by ability modifier and level, the chance that a spell lands, and the saves that each low-level spell targets. Print this sheet.</p>
+
+<h2>The two formulas</h2>
+<div class="formula">Spell Save DC = 8 + proficiency bonus + spellcasting ability modifier</div>
+<div class="formula">target: d20 + ability modifier + proficiency bonus (if proficient) &nbsp;≥&nbsp; DC → the target saves</div>
+<ul>
+  <li>The target succeeds when the result equals or exceeds the DC. <a href="https://bg3.wiki/wiki/Saving_throw">wiki</a></li>
+  <li>A saving throw has no automatic success on a natural 20 and no automatic failure on a natural 1. The only exceptions are concentration saves and dialogue saves. <a href="https://bg3.wiki/wiki/Saving_throw">wiki</a></li>
+  <li>A ray spell or a projectile spell rolls an attack against the Armour Class instead. An area spell or a point-target spell uses a saving throw. <a href="https://bg3.wiki/wiki/Spellcasting">wiki</a></li>
+  <li>The Sorcerer casts with Charisma. The Wizard casts with Intelligence. <a href="https://bg3.wiki/wiki/Spellcasting">wiki</a></li>
+</ul>
+
+<h2>Spell Save DC by ability modifier and character level</h2>
+<table>
+<tr><th>Ability modifier</th><th class="num">Level 1–4 (+2)</th><th class="num">Level 5–8 (+3)</th><th class="num">Level 9–12 (+4)</th></tr>
+<tr><td>+2 (score 14–15)</td><td class="num">12</td><td class="num">13</td><td class="num">14</td></tr>
+<tr><td>+3 (score 16–17)</td><td class="num">13</td><td class="num">14</td><td class="num">15</td></tr>
+<tr><td>+4 (score 18–19)</td><td class="num">14</td><td class="num">15</td><td class="num">16</td></tr>
+<tr><td>+5 (score 20–21)</td><td class="num">15</td><td class="num">16</td><td class="num">17</td></tr>
+</table>
+<p class="cite">Proficiency bonus by level: <a href="https://bg3.wiki/wiki/Sorcerer">bg3.wiki, Sorcerer</a>. The current Sorcerer run sits at Charisma 16 and level 2, so the DC is 13.</p>
+
+<h2>Ability score to modifier</h2>
+<table>
+<tr><th class="num">Score</th><th class="num">1</th><th class="num">4–5</th><th class="num">6–7</th><th class="num">8–9</th><th class="num">10–11</th><th class="num">12–13</th><th class="num">14–15</th><th class="num">16–17</th><th class="num">18–19</th><th class="num">20–21</th></tr>
+<tr><td>Modifier</td><td class="num">−5</td><td class="num">−3</td><td class="num">−2</td><td class="num">−1</td><td class="num">+0</td><td class="num">+1</td><td class="num">+2</td><td class="num">+3</td><td class="num">+4</td><td class="num">+5</td></tr>
+</table>
+<p class="cite">Subtract 10 from the score, divide by 2, and round down. Source: <a href="https://bg3.wiki/wiki/Abilities">bg3.wiki, Abilities</a>.</p>
+
+<h2>Needed face → chance that the spell lands</h2>
+<p class="cite">Need = your Spell Save DC − the save bonus of the target. Land (flat) = 1 − (21 − need) ÷ 20. Land (target has disadvantage) = 1 − save².</p>
+<table>
+<tr><th class="num">Need</th><th class="num">Target saves</th><th class="num">Spell lands</th><th class="num">Lands, target has disadvantage</th></tr>
+<tr><td class="num">5</td><td class="num">80%</td><td class="num">20%</td><td class="num">36%</td></tr>
+<tr><td class="num">8</td><td class="num">65%</td><td class="num">35%</td><td class="num">57.8%</td></tr>
+<tr><td class="num">10</td><td class="num">55%</td><td class="num">45%</td><td class="num">69.8%</td></tr>
+<tr><td class="num">11</td><td class="num">50%</td><td class="num">50%</td><td class="num">75%</td></tr>
+<tr><td class="num">12</td><td class="num">45%</td><td class="num">55%</td><td class="num">79.8%</td></tr>
+<tr><td class="num">13</td><td class="num">40%</td><td class="num">60%</td><td class="num">84%</td></tr>
+<tr><td class="num">14</td><td class="num">35%</td><td class="num">65%</td><td class="num">87.8%</td></tr>
+<tr><td class="num">15</td><td class="num">30%</td><td class="num">70%</td><td class="num">91%</td></tr>
+<tr><td class="num">16</td><td class="num">25%</td><td class="num">75%</td><td class="num">93.8%</td></tr>
+<tr><td class="num">18</td><td class="num">15%</td><td class="num">85%</td><td class="num">97.8%</td></tr>
+<tr><td class="num">20</td><td class="num">5%</td><td class="num">95%</td><td class="num">99.8%</td></tr>
+</table>
+<p class="cite">There is no natural 20 floor on this table, because a saving throw has no automatic success. A need above 20 lands 100 percent of the time.</p>
+
+<h2>Advantage and disadvantage on saves</h2>
+<ul>
+  <li>Advantage and disadvantage apply to saving throws in the same way as to attack rolls. <a href="https://bg3.wiki/wiki/Advantage">wiki</a></li>
+  <li>Multiple sources of the same kind do not stack. The game still rolls two dice.</li>
+  <li>Any advantage plus any disadvantage cancels to one flat die.</li>
+  <li>Heightened Spell costs 3 sorcery points and gives the target disadvantage on its first saving throw. The Sorcerer gains this option at class level 3. <a href="https://bg3.wiki/wiki/Sorcerer">wiki</a></li>
+</ul>
+
+<h2>Saving throw proficiencies by class</h2>
+<table>
+<tr><th>Class</th><th>Proficient saves</th><th>Class</th><th>Proficient saves</th></tr>
+<tr><td>Barbarian</td><td>Str, Con</td><td>Paladin</td><td>Wis, Cha</td></tr>
+<tr><td>Bard</td><td>Dex, Cha</td><td>Ranger</td><td>Str, Dex</td></tr>
+<tr><td>Cleric</td><td>Wis, Cha</td><td>Rogue</td><td>Dex, Int</td></tr>
+<tr><td>Druid</td><td>Int, Wis</td><td>Sorcerer</td><td>Con, Cha</td></tr>
+<tr><td>Fighter</td><td>Str, Con</td><td>Warlock</td><td>Wis, Cha</td></tr>
+<tr><td>Monk</td><td>Str, Dex</td><td>Wizard</td><td>Int, Wis</td></tr>
+</table>
+<p class="cite">Source: <a href="https://bg3.wiki/wiki/Saving_throw">bg3.wiki, Saving throw</a>. Target the two abilities that the row does not list.</p>
+
+<h2>Save by spell, levels 1 and 2</h2>
+<table>
+<tr><th>Spell</th><th class="num">Level</th><th>Save</th><th>Effect of a successful save</th><th>Source</th></tr>
+<tr><td>Grease</td><td class="num">1</td><td>Dexterity</td><td>The creature does not fall Prone. Wizard list, or a Black or Acid Draconic Sorcerer.</td><td><a href="https://bg3.wiki/wiki/Grease">wiki</a></td></tr>
+<tr><td>Burning Hands</td><td class="num">1</td><td>Dexterity</td><td>The target still takes half damage.</td><td><a href="https://bg3.wiki/wiki/Burning_Hands">wiki</a></td></tr>
+<tr><td>Thunderwave</td><td class="num">1</td><td>Constitution</td><td>The target takes half damage and is not pushed.</td><td><a href="https://bg3.wiki/wiki/Thunderwave">wiki</a></td></tr>
+<tr><td>Ray of Sickness</td><td class="num">1</td><td>Constitution, after an attack roll</td><td>The target avoids Poisoned but still takes the damage.</td><td><a href="https://bg3.wiki/wiki/Ray_of_Sickness">wiki</a></td></tr>
+<tr><td>Tasha's Hideous Laughter</td><td class="num">1</td><td>Wisdom</td><td>The target avoids the condition. Wizard list only.</td><td><a href="https://bg3.wiki/wiki/Tasha%27s_Hideous_Laughter">wiki</a></td></tr>
+<tr><td>Hold Person</td><td class="num">2</td><td>Wisdom</td><td>The target avoids the condition and repeats the save each turn. Humanoid targets only.</td><td><a href="https://bg3.wiki/wiki/Hold_Person">wiki</a></td></tr>
+<tr><td>Sleep</td><td class="num">1</td><td>None</td><td>No save. The spell affects creatures with cumulative HP below 24.</td><td><a href="https://bg3.wiki/wiki/Sleep">wiki</a></td></tr>
+</table>
+<p class="cite">A damage spell still deals half damage on a save. A condition spell gives nothing on a save.</p>
+
+<h2>The Examine panel</h2>
+<ol>
+  <li>Hover over the creature.</li>
+  <li>Press <b>T</b>.</li>
+  <li>Read the six saving throw numbers, the resistances, and the current conditions.</li>
+  <li>Choose the spell that targets the lowest number.</li>
+</ol>
+<p class="cite">Sources: <a href="https://bg3.wiki/wiki/Abilities">bg3.wiki, Abilities</a> for the shortcut and the saving throws; <a href="https://primagames.com/gaming/how-to-examine-enemy-weaknesses-and-resistances-in-baldurs-gate-3">Prima Games</a> for the resistances and the conditions.</p>
+<p>Warning: the save number can exceed the ability modifier, because a proficient creature adds its proficiency bonus. Read the save number itself, and use the ability modifier only as a fallback.</p>
+
+<h2>Weak save patterns</h2>
+<p>Use these two patterns as a first guess. Confirm each guess in the Examine panel.</p>
+<ul>
+  <li>Large brutes usually have low Dexterity and low Wisdom.</li>
+  <li>Nimble enemies usually have low Strength and low Wisdom.</li>
+</ul>
+<table>
+<tr><th>Creature</th><th class="num">Str</th><th class="num">Dex</th><th class="num">Con</th><th class="num">Int</th><th class="num">Wis</th><th class="num">Cha</th><th>Source</th></tr>
+<tr><td>Goblin Warrior</td><td class="num">+1</td><td class="num">+1</td><td class="num">+0</td><td class="num">+0</td><td class="num">−1</td><td class="num">−1</td><td><a href="https://bg3.wiki/wiki/Goblin_Warrior">wiki</a></td></tr>
+<tr><td>Ogre Brute</td><td class="num">+4</td><td class="num">+1</td><td class="num">+3</td><td class="num">−3</td><td class="num">−2</td><td class="num">−2</td><td><a href="https://bg3.wiki/wiki/Ogre_Brute">wiki</a></td></tr>
+<tr><td>Ochre Jelly</td><td class="num">+2</td><td class="num">−2</td><td class="num">+2</td><td class="num">−4</td><td class="num">−2</td><td class="num">−5</td><td><a href="https://bg3.wiki/wiki/Ochre_Jelly">wiki</a></td></tr>
+</table>
+<p class="cite">Ability modifiers on Balanced difficulty. Other difficulties change some scores. These three stat blocks are verified. Do not apply them to other creatures.</p>
+
+<nav class="links">
+  <a href="../lessons/0002-saving-throws-and-spell-save-dc.html">Lesson 2</a>
+  <a href="d20-cheat-sheet.html">Reference: d20 cheat sheet</a>
+  <a href="../RESOURCES.md">Resources</a>
+</nav>
+</main>
+</body>
+</html>

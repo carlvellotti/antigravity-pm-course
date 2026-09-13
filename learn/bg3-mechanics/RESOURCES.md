@@ -62,6 +62,26 @@
   Use for: the Constitution saving throw, the 10 turn duration, and the absence of a concentration requirement.
 - [bg3.wiki: Shove](https://bg3.wiki/wiki/Shove)
   Use for: the bonus action cost, the Athletics check against passive Athletics or Acrobatics, the push distance, and the 8 m fall that knocks a creature Prone.
+- [bg3.wiki: Damage types](https://bg3.wiki/wiki/Damage_types)
+  Use for: the list of 13 damage types by group, and the stacking and cancellation rules.
+- [bg3.wiki: Resistances](https://bg3.wiki/wiki/Resistances)
+  Use for: the exact resistance, vulnerability and immunity rules, the rounding, and the Examine panel arrow icons. Also has the object toughness thresholds.
+- [bg3.wiki: Wet (Condition)](https://bg3.wiki/wiki/Wet_(Condition))
+  Use for: the full effect list of Wet, the negated-resistance case, Chilled plus Wet, and the invisibility interaction.
+- [bg3.wiki: Surfaces](https://bg3.wiki/wiki/Surfaces)
+  Use for: what each surface does and how water, ice, oil and alcohol react to an element.
+- [bg3.wiki: Chromatic Orb](https://bg3.wiki/wiki/Chromatic_Orb)
+  Use for: the damage of each element variant. Thunder is 3d8, the five other elements are 2d8 plus a surface. Variant pages: [Lightning](https://bg3.wiki/wiki/Chromatic_Orb:_Lightning), [Cold](https://bg3.wiki/wiki/Chromatic_Orb:_Cold).
+- [bg3.wiki: Magic Missile](https://bg3.wiki/wiki/Magic_Missile)
+  Use for: the Force damage type, the 1d4 + 1 darts, and the auto-hit rule.
+- [bg3.wiki: Ray of Frost](https://bg3.wiki/wiki/Ray_of_Frost)
+  Use for: the cold cantrip damage and scaling. It does not apply Chilled.
+- [bg3.wiki: Create or Destroy Water](https://bg3.wiki/wiki/Create_or_Destroy_Water)
+  Use for: which classes get the spell and at which level, the 4 m radius, and the surface notes.
+- [bg3.wiki: Options](https://bg3.wiki/wiki/Options)
+  Use for: default keybindings. "Examine / Pin Tooltip" is T.
+- [bg3.wiki creature pages: Skeleton, Phase Spider, Wood Woad, Mud Mephit](https://bg3.wiki/wiki/Skeleton)
+  Verified resistance stat blocks for Act 1 enemies. Also [Phase Spider](https://bg3.wiki/wiki/Phase_Spider), [Wood Woad](https://bg3.wiki/wiki/Wood_Woad), [Mud Mephit](https://bg3.wiki/wiki/Mud_Mephit). The [Goblin](https://bg3.wiki/wiki/Goblin) and [Gnoll](https://bg3.wiki/wiki/Gnoll) pages are race pages and list no resistances.
 - [D&D 5e Basic Rules, 2018 PDF from Wizards of the Coast](https://media.wizards.com/2018/dnd/downloads/DnD_BasicRules_2018.pdf)
   Chapter 9 (Combat) and Chapter 10 (Spellcasting) are the tabletop rules BG3 is built on. Use for: the underlying logic when a BG3 tooltip is terse. Check bg3.wiki whenever BG3 might differ.
 
@@ -83,7 +103,8 @@
 
 ## Gaps
 
-- No verified source yet for the object toughness thresholds (Sturdy, Medium, Fragile). Find the bg3.wiki page before teaching it.
-- No verified source yet for surface and elemental interactions. Candidate: bg3.wiki "Surfaces" page.
+- Object toughness thresholds are now verified on [bg3.wiki: Resistances](https://bg3.wiki/wiki/Resistances): Sturdy 10, Medium Toughness 22, Greater Toughness 50, per single hit.
+- Surface and elemental interactions are now verified on [bg3.wiki: Surfaces](https://bg3.wiki/wiki/Surfaces).
+- No verified source yet for a Scroll of Create Water. No such wiki page was found, so do not claim that Gale can scribe the spell.
 - No verified source yet for which enemy types tend to have weak saves as a general rule. Three individual stat blocks are verified (Goblin Warrior, Ogre Brute, Ochre Jelly) and lesson 0002 presents the pattern as a heuristic only. The general `Ogre` and `Goblin` pages carry no ability scores; use the specific creature pages instead.
 - No verified source yet for the saving throw proficiencies of individual non-player creatures. The wiki stat blocks list ability scores, not save proficiencies. Read the save numbers in the Examine panel instead.
