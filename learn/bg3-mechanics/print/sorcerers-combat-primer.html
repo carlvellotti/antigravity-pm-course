@@ -358,7 +358,7 @@
   --gold-pale:#e7dcc0;
   --paper-warm:#faf8f3;   /* tint for set-apart blocks */
   --rule:#cfcdd6;
-  --measure:122mm;        /* ~65 characters at 10.6pt */
+  --measure:none;        /* ~65 characters at 10.6pt */
   --serif:"Source Serif 4","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   --display:"EB Garamond","Cormorant Garamond",Garamond,Georgia,serif;
   --smallcaps:"Cormorant SC","EB Garamond",Georgia,serif;
@@ -598,9 +598,9 @@ td a{color:var(--grey)}
 .opener h1{
   font-family:var(--display); font-weight:600; font-size:25pt; line-height:1.08;
   color:var(--indigo); margin:0 0 3mm; max-width:150mm;
-  string-set:sectitle content(text);
 }
-.toc h1, .sources h1{ string-set:sectitle content(text); }
+h1{ string-set:sectitle content(text); }
+.cover h1{ string-set:none; }
 .opener .meta{
   font-size:.78rem; color:var(--grey-soft); margin:0 0 4.5mm;
   padding-bottom:2.5mm; border-bottom:0.5pt solid var(--gold);
