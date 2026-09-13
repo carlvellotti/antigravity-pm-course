@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference: the d20 cheat sheet</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<p class="kicker">BG3 Mechanics · Reference</p>
+<h1>The d20 cheat sheet</h1>
+<p class="lede">The three rolls the game makes, what goes into each, and the advantage table. Print it.</p>
+
+<h2>The three rolls</h2>
+<table>
+<tr><th>Roll</th><th>Formula</th><th>Beats</th><th>Source</th></tr>
+<tr><td>Attack</td><td>d20 + ability mod + proficiency</td><td>Target AC</td><td><a href="https://bg3.wiki/wiki/Attack_roll">wiki</a></td></tr>
+<tr><td>Saving throw (the target rolls)</td><td>d20 + ability mod + proficiency if proficient</td><td>Your Spell Save DC</td><td><a href="https://bg3.wiki/wiki/Saving_throw">wiki</a></td></tr>
+<tr><td>Concentration (you roll when hit)</td><td>d20 + Constitution mod + proficiency if proficient</td><td>10 or half the damage, whichever is higher</td><td><a href="https://bg3.wiki/wiki/Concentration">wiki</a></td></tr>
+</table>
+<div class="formula">Spell Save DC = 8 + proficiency bonus + spellcasting ability modifier</div>
+<p>Sorcerer casts with Charisma. Wizard casts with Intelligence. Natural 20 on an attack always hits and crits. Natural 1 always misses. A natural 1 on a concentration save almost always breaks it.</p>
+
+<h2>Proficiency bonus by level</h2>
+<table>
+<tr><th>Level</th><th class="num">1–4</th><th class="num">5–8</th><th class="num">9–12</th></tr>
+<tr><td>Bonus</td><td class="num">+2</td><td class="num">+3</td><td class="num">+4</td></tr>
+</table>
+
+<h2>Flat roll: needed face → hit chance</h2>
+<table>
+<tr><th class="num">Need</th><th class="num">Flat</th><th class="num">Advantage</th><th class="num">Disadvantage</th></tr>
+<tr><td class="num">2</td><td class="num">95%</td><td class="num">99.8%</td><td class="num">90%</td></tr>
+<tr><td class="num">5</td><td class="num">80%</td><td class="num">96%</td><td class="num">64%</td></tr>
+<tr><td class="num">8</td><td class="num">65%</td><td class="num">88%</td><td class="num">42%</td></tr>
+<tr><td class="num">10</td><td class="num">55%</td><td class="num">80%</td><td class="num">30%</td></tr>
+<tr><td class="num">11</td><td class="num">50%</td><td class="num">75%</td><td class="num">25%</td></tr>
+<tr><td class="num">13</td><td class="num">40%</td><td class="num">64%</td><td class="num">16%</td></tr>
+<tr><td class="num">16</td><td class="num">25%</td><td class="num">44%</td><td class="num">6%</td></tr>
+<tr><td class="num">20</td><td class="num">5%</td><td class="num">10%</td><td class="num">0.25%</td></tr>
+</table>
+<p class="cite">Need = AC − attack bonus. Advantage = 1 − miss². Disadvantage = hit².</p>
+
+<h2>Advantage rules</h2>
+<ul>
+  <li>Advantage: roll two, keep higher. Disadvantage: roll two, keep lower.</li>
+  <li>Multiple sources of the same kind do not stack. Still two dice.</li>
+  <li>Any advantage plus any disadvantage cancels to one flat die.</li>
+  <li>High ground is <b>+2 flat</b>, low ground <b>−2 flat</b>, not advantage. It stacks with real advantage. <a href="https://bg3.wiki/wiki/High_ground_rules">wiki</a></li>
+  <li>Common advantage on attacks: target Prone, Restrained, Blinded, Paralysed, Sleeping; attacker Hidden or Invisible.</li>
+  <li>Common disadvantage: ranged attack while an enemy is adjacent, ranged attack at a target within 3 m, attacker cannot see the target.</li>
+</ul>
+
+<h2>Saving throw proficiencies by class</h2>
+<table>
+<tr><th>Class</th><th>Proficient saves</th><th>Class</th><th>Proficient saves</th></tr>
+<tr><td>Barbarian</td><td>Str, Con</td><td>Paladin</td><td>Wis, Cha</td></tr>
+<tr><td>Bard</td><td>Dex, Cha</td><td>Ranger</td><td>Str, Dex</td></tr>
+<tr><td>Cleric</td><td>Wis, Cha</td><td>Rogue</td><td>Dex, Int</td></tr>
+<tr><td>Druid</td><td>Int, Wis</td><td>Sorcerer</td><td>Con, Cha</td></tr>
+<tr><td>Fighter</td><td>Str, Con</td><td>Warlock</td><td>Wis, Cha</td></tr>
+<tr><td>Monk</td><td>Str, Dex</td><td>Wizard</td><td>Int, Wis</td></tr>
+</table>
+<p class="cite">Source: <a href="https://bg3.wiki/wiki/Saving_throw">bg3.wiki, Saving throw</a>. Useful for reading enemy casters and for knowing your own weak saves.</p>
+
+<h2>Karmic Dice</h2>
+<p>On by default. After failed rolls it raises the chance your next roll auto-succeeds, and it squashes damage rolls toward the average. It applies to enemies too, but never forces an enemy save to succeed. Turn it off in Gameplay options if you want the table above to be the truth. <a href="https://bg3.wiki/wiki/Karmic_Dice">wiki</a></p>
+
+<nav class="links">
+  <a href="../lessons/0001-where-the-hit-chance-comes-from.html">Lesson 1</a>
+  <a href="../RESOURCES.md">Resources</a>
+</nav>
+</main>
+</body>
+</html>

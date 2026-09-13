@@ -1,0 +1,48 @@
+/* Shared stylesheet for the BG3 mechanics course. Every lesson and reference links this. */
+:root {
+  --ink: #1d1a17; --ink-soft: #55504a; --paper: #fbf8f2; --rule: #d9d2c5;
+  --accent: #8a3b12; --accent-soft: #f2e2d5; --ok: #2d6a4f; --ok-soft: #dcefe4;
+  --bad: #9b2226; --bad-soft: #f6dcdc; --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #ece7de; --ink-soft: #b3aca1; --paper: #16140f; --rule: #3a352c;
+    --accent: #e08a55; --accent-soft: #35231a; --ok: #7bc9a0; --ok-soft: #1f3a2d;
+    --bad: #f08a8d; --bad-soft: #402022; }
+}
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); line-height: 1.55; }
+main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .25rem; font-weight: 600; }
+h2 { font-size: 1.3rem; margin: 2.5rem 0 .75rem; font-weight: 600; border-bottom: 1px solid var(--rule); padding-bottom: .25rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+p, li { max-width: 38rem; }
+a { color: var(--accent); }
+.kicker { text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; color: var(--ink-soft); margin: 0 0 1.5rem; }
+.lede { font-size: 1.15rem; color: var(--ink-soft); margin-bottom: 2rem; }
+.formula { font-family: var(--mono); font-size: .95rem; background: var(--accent-soft); border-left: 3px solid var(--accent); padding: .75rem 1rem; margin: 1.25rem 0; overflow-x: auto; }
+.aside { font-size: .9rem; color: var(--ink-soft); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: .75rem 0; margin: 1.5rem 0; }
+.cite { font-size: .8rem; color: var(--ink-soft); }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .92rem; }
+th, td { text-align: left; padding: .4rem .6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; color: var(--ink-soft); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+td.num, th.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.tool { border: 1px solid var(--rule); border-radius: 6px; padding: 1rem 1.25rem; margin: 1.5rem 0; background: color-mix(in srgb, var(--paper) 92%, var(--ink)); }
+.tool label { display: inline-flex; flex-direction: column; gap: .2rem; margin: .25rem 1rem .5rem 0; font-size: .85rem; color: var(--ink-soft); }
+.tool input[type=number], .tool select { font: inherit; font-size: 1rem; padding: .3rem .5rem; width: 6rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); }
+.tool .readout { font-family: var(--mono); font-size: 1rem; margin-top: .5rem; }
+.tool .readout strong { font-size: 1.6rem; color: var(--accent); }
+.quiz { border: 1px solid var(--rule); border-radius: 6px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+.quiz .q { font-weight: 600; margin: 0 0 .75rem; }
+.quiz button.opt { display: block; width: 100%; text-align: left; font: inherit; font-size: .95rem; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 4px; padding: .5rem .75rem; margin: .35rem 0; cursor: pointer; }
+.quiz button.opt:hover { border-color: var(--accent); }
+.quiz button.opt.right { background: var(--ok-soft); border-color: var(--ok); }
+.quiz button.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.quiz .why { font-size: .9rem; margin: .75rem 0 0; color: var(--ink-soft); min-height: 1.2em; }
+.quiz .why.right { color: var(--ok); }
+.quiz .why.wrong { color: var(--bad); }
+nav.links { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .9rem; }
+nav.links a { margin-right: 1.25rem; }
+.followup { background: var(--accent-soft); padding: .75rem 1rem; border-radius: 6px; margin-top: 2rem; font-size: .95rem; }
+@media print { html { font-size: 11pt; } main { padding: 0; max-width: none; } .tool, .quiz, .followup, nav.links { display: none; } a { color: inherit; text-decoration: none; } }

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 1: Where the hit chance comes from</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<p class="kicker">BG3 Mechanics · Lesson 1 · about 8 minutes</p>
+<h1>Where the hit chance comes from</h1>
+<p class="lede">Every percentage BG3 shows you for a weapon attack or a spell attack is one d20 roll plus a bonus, compared against a number. This lesson gives you the formula, then makes you use it until the tooltip stops being magic.</p>
+
+<h2>The one formula</h2>
+<div class="formula">d20 + ability modifier + proficiency bonus &nbsp;≥&nbsp; target's Armour Class → hit</div>
+<p>That is the whole thing. The wiki states it as "Result = d20 + Ability score modifier + Proficiency bonus" and a hit happens when the result equals or exceeds AC. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Attack_roll">bg3.wiki, Attack roll</a>.</span></p>
+<p>For your Sorcerer at level 2 with 16 Charisma, the ability modifier is +3 and the proficiency bonus is +2, so your spell attack bonus is <b>+5</b>. For Gale with 17 Intelligence it is the same +5. <span class="cite">Proficiency by level: <a href="https://bg3.wiki/wiki/Sorcerer">bg3.wiki, Sorcerer</a>.</span></p>
+<p>Two faces of the die ignore the math. A natural 20 always hits and is a critical hit. A natural 1 always misses. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Attack_roll">bg3.wiki, Attack roll</a>.</span></p>
+
+<h2>Turning it into a percentage</h2>
+<p>Subtract your bonus from the target's AC. That is the lowest die face that hits. Count how many faces from that number up to 20, then divide by 20.</p>
+<p>Example: bonus +5, enemy AC 13. You need 13 − 5 = <b>8</b> or higher. Faces 8 through 20 is 13 faces. 13 ÷ 20 = <b>65%</b>. That is the number the tooltip shows.</p>
+<div class="tool" data-hitcalc></div>
+<p class="aside">Try it: set AC to 18 and watch the number fall to 40%. Then set your bonus to 7 and see what one point of Charisma plus one point of proficiency buys you. Each +1 is exactly one more face on the die, which is 5 percentage points, until you run into the natural 1 and natural 20 floors.</p>
+
+<h2>What advantage really does</h2>
+<p>Advantage means roll two d20s and keep the higher. Disadvantage keeps the lower. Nothing else changes: same bonus, same AC. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Advantage">bg3.wiki, Advantage</a>.</span></p>
+<p>The percentage moves a lot because you only need <i>one</i> of two dice to clear the bar. If a flat roll hits 65% of the time, it misses 35% of the time. With advantage you miss only when both dice miss: 0.35 × 0.35 = 12%, so you hit <b>88%</b>. With disadvantage you hit only when both hit: 0.65 × 0.65 = <b>42%</b>.</p>
+<p>Two rules that trip people up, both straight from the wiki:</p>
+<ul>
+  <li><b>Sources never stack.</b> Three reasons for advantage still means two dice. "Creatures receive no additional benefit or penalty from having multiple sources of advantage or disadvantage."</li>
+  <li><b>One of each cancels everything.</b> Two sources of advantage and one of disadvantage is a flat roll. "Creatures that have both advantage and disadvantage on a roll only roll a single die, even if they have multiple sources of either."</li>
+</ul>
+<p>Switch the calculator above to Advantage and Disadvantage to feel the size of the swing at different ACs. It matters most in the middle. At 95% or 5% it barely moves the needle.</p>
+
+<h2>A correction: high ground is not advantage</h2>
+<p>Many guides, and I earlier in our conversation, say high ground gives advantage. In the released game it does not. Attacking from at least 2.5 m above the target gives a flat <b>+2</b> to the attack roll, and attacking from below gives <b>−2</b>. <span class="cite">Source: <a href="https://bg3.wiki/wiki/High_ground_rules">bg3.wiki, High ground rules</a>.</span></p>
+<p>This is actually better for you. Because it is a flat bonus and not advantage, it stacks with real advantage from a prone or blinded target. High ground plus a knocked-down enemy is +2 <i>and</i> two dice.</p>
+
+<h2>Practice: rebuild the tooltip</h2>
+<p>Do this in your next fight, before reading further. Hover an attack, note the percentage, then open the combat log after you roll (the scroll icon, bottom right). Find the line for that attack. It lists the die, each modifier by name, and the AC. Check that the percentage you saw matches the formula.</p>
+
+<div class="quiz" data-quiz='{"q":"Your attack bonus is +5 and the enemy has AC 15. Flat roll. What is the hit chance?","options":["50 percent chance","55 percent chance","60 percent chance","65 percent chance"],"answer":1,"why":"You need 15 − 5 = 10 or higher. Faces 10 to 20 is 11 faces, and 11 ÷ 20 = 55%."}'></div>
+
+<div class="quiz" data-quiz='{"q":"You are hidden (advantage), on high ground (+2), and the target is prone (advantage). How many dice do you roll?","options":["One die, plus two","Two dice, plus two","Three dice, plus two","Two dice, plus four"],"answer":1,"why":"Advantage never stacks, so two sources is still two dice. High ground is a flat +2, not advantage, so it adds on top."}'></div>
+
+<div class="quiz" data-quiz='{"q":"Same shot, but now you are also threatened by an adjacent enemy (disadvantage on ranged attacks). What happens?","options":["Two dice, keep lower","Two dice, keep higher","One die, flat roll","Three dice, keep middle"],"answer":2,"why":"Any disadvantage against any advantage cancels to a single flat die, no matter how many sources of each. The +2 from high ground still applies."}'></div>
+
+<div class="quiz" data-quiz='{"q":"Your flat hit chance is 50%. With advantage it becomes roughly what?","options":["About 60 percent","About 65 percent","About 75 percent","About 85 percent"],"answer":2,"why":"You miss only if both dice miss: 0.5 × 0.5 = 25%, so you hit 75%. Advantage is biggest in the middle of the range."}'></div>
+
+<h2>Primary source</h2>
+<p>Read the <a href="https://bg3.wiki/wiki/Advantage">bg3.wiki Advantage page</a>. It is short, it has the average-roll numbers, and it links the full list of what grants advantage and disadvantage. Ten minutes there covers everything this lesson touched.</p>
+
+<div class="followup">Anything unclear? Ask me. I am your teacher for this course, and the next lesson will build on whether you can rebuild a tooltip by hand. Tell me one that surprised you.</div>
+
+<nav class="links">
+  <a href="../reference/d20-cheat-sheet.html">Reference: d20 cheat sheet</a>
+  <a href="../MISSION.md">Mission</a>
+  <a href="../RESOURCES.md">Resources</a>
+</nav>
+</main>
+<script src="../assets/hit-calc.js"></script>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
