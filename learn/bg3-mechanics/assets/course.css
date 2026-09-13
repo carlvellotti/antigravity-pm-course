@@ -1,15 +1,18 @@
 /* Shared stylesheet for the BG3 mechanics course. Every lesson and reference links this. */
 :root {
-  --ink: #1d1a17; --ink-soft: #55504a; --paper: #fbf8f2; --rule: #d9d2c5;
-  --accent: #8a3b12; --accent-soft: #f2e2d5; --ok: #2d6a4f; --ok-soft: #dcefe4;
+  --ink: #1c1b22; --ink-soft: #57555f; --paper: #f7f6f2; --rule: #d6d4dc;
+  --accent: #3d3a8c; --accent-soft: #e6e5f4; --ok: #2d6a4f; --ok-soft: #dcefe4;
   --bad: #9b2226; --bad-soft: #f6dcdc; --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root { --ink: #ece7de; --ink-soft: #b3aca1; --paper: #16140f; --rule: #3a352c;
-    --accent: #e08a55; --accent-soft: #35231a; --ok: #7bc9a0; --ok-soft: #1f3a2d;
+  :root:not([data-theme="light"]) { --ink: #e8e7ee; --ink-soft: #aaa8b6; --paper: #14131a; --rule: #35333f;
+    --accent: #a9a6e8; --accent-soft: #26244a; --ok: #7bc9a0; --ok-soft: #1f3a2d;
     --bad: #f08a8d; --bad-soft: #402022; }
 }
+:root[data-theme="dark"] { --ink: #e8e7ee; --ink-soft: #aaa8b6; --paper: #14131a; --rule: #35333f;
+    --accent: #a9a6e8; --accent-soft: #26244a; --ok: #7bc9a0; --ok-soft: #1f3a2d;
+    --bad: #f08a8d; --bad-soft: #402022; }
 * { box-sizing: border-box; }
 html { font-size: 18px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); line-height: 1.55; }
