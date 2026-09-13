@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference: damage types and resistances</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<p class="kicker">BG3 Mechanics · Reference</p>
+<h1>Damage types and resistances</h1>
+<p class="lede">This sheet gives the 13 damage types, the three modifiers, the icons of the Examine panel, the Wet combination, and the surface reactions. Print this sheet.</p>
+
+<h2>The 13 damage types</h2>
+<table>
+<tr><th>Group</th><th>Types</th><th class="num">Count</th></tr>
+<tr><td>Physical</td><td>Bludgeoning, Piercing, Slashing</td><td class="num">3</td></tr>
+<tr><td>Elemental</td><td>Acid, Cold, Fire, Lightning, Poison, Thunder</td><td class="num">6</td></tr>
+<tr><td>Other</td><td>Force, Necrotic, Psychic, Radiant</td><td class="num">4</td></tr>
+</table>
+<p class="cite">Source: <a href="https://bg3.wiki/wiki/Damage_types">bg3.wiki, Damage types</a>.</p>
+
+<h2>The three modifiers</h2>
+<div class="formula">resistance → damage ÷ 2, rounded down
+vulnerability → damage × 2
+immunity → damage = 0</div>
+<table>
+<tr><th>Rule</th><th>Result</th></tr>
+<tr><td>Two resistances to the same type</td><td>Half damage. The modifiers do not stack.</td></tr>
+<tr><td>Resistance plus vulnerability, same type</td><td>Normal damage. The modifiers cancel each other.</td></tr>
+<tr><td>Immunity plus vulnerability, same type</td><td>0 damage. Immunity ignores the other modifiers.</td></tr>
+<tr><td>Rounding</td><td>Halve the damage first, then round down.</td></tr>
+</table>
+<p class="cite">Sources: <a href="https://bg3.wiki/wiki/Damage_types">bg3.wiki, Damage types</a> and <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki, Resistances</a>.</p>
+
+<h2>The Examine panel</h2>
+<p>Hover the cursor over a creature and press <b>T</b>. <span class="cite">Default keybinding "Examine / Pin Tooltip": <a href="https://bg3.wiki/wiki/Options">bg3.wiki, Options</a>.</span></p>
+<table>
+<tr><th>Mark on the damage type icon</th><th>Meaning</th></tr>
+<tr><td>Grey upward arrow</td><td>Resistance to non-magical sources. Damage from those sources is 50% lower.</td></tr>
+<tr><td>Blue upward arrow</td><td>Resistance to magical sources. Damage from those sources is 50% lower.</td></tr>
+<tr><td>Grey and blue upward arrow</td><td>Resistance to both magical and non-magical sources.</td></tr>
+<tr><td>Red downward arrow</td><td>Vulnerability. Damage of that type is 100% higher.</td></tr>
+<tr><td>Yellow outline on the shield</td><td>Immunity to magical and non-magical sources.</td></tr>
+<tr><td>Grey outline on the shield</td><td>Immunity to non-magical sources only.</td></tr>
+</table>
+<p>Spells are magical sources of damage. Weapons of uncommon rarity and above are also magical sources. A spellcaster therefore reads the blue arrows. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki, Resistances</a>.</span></p>
+
+<h2>Wet</h2>
+<table>
+<tr><th>Effect of Wet</th><th>Result</th></tr>
+<tr><td>Lightning damage</td><td>Vulnerable. The damage is doubled.</td></tr>
+<tr><td>Cold damage</td><td>Vulnerable. The damage is doubled.</td></tr>
+<tr><td>Fire damage</td><td>Resistant. The damage is halved.</td></tr>
+<tr><td>Burning and Wild Magic: Burning</td><td>Immune.</td></tr>
+<tr><td>Target already resists Lightning or Cold</td><td>The resistance is negated. The target does not become vulnerable.</td></tr>
+<tr><td>Target is already Chilled</td><td>Both conditions are replaced with Frozen.</td></tr>
+<tr><td>Target is invisible</td><td>Wet ends normal invisibility immediately.</td></tr>
+</table>
+<p>Sources of Wet: deep water, steam clouds, and the spell Create Water. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Wet_(Condition)">bg3.wiki, Wet</a>.</span></p>
+<p>Warning: Wet applies to your own party in the same way. Keep your melee characters out of the water.</p>
+
+<h2>Create or Destroy Water</h2>
+<table>
+<tr><th>Property</th><th>Value</th></tr>
+<tr><td>Level and school</td><td>Level 1, Transmutation. Costs an action and a level 1 spell slot.</td></tr>
+<tr><td>Area</td><td>Radius of 4 m, at a range of 9 m.</td></tr>
+<tr><td>Cleric and Druid</td><td>Learn the spell at level 1.</td></tr>
+<tr><td>Conjuration School Wizard</td><td>Gets the Create Water variant at level 2, once per Short Rest, with no spell slot.</td></tr>
+<tr><td>Storm Sorcery Sorcerer</td><td>Gets the spell at level 6.</td></tr>
+</table>
+<p class="cite">Source: <a href="https://bg3.wiki/wiki/Create_or_Destroy_Water">bg3.wiki, Create or Destroy Water</a>. An Evocation Wizard and a level 2 Sorcerer do not have this spell.</p>
+
+<h2>Surface reactions</h2>
+<table>
+<tr><th>Surface</th><th>Damage applied</th><th>Result</th></tr>
+<tr><td>Water</td><td>Lightning</td><td>Electrified Water surface</td></tr>
+<tr><td>Water</td><td>Cold</td><td>Ice surface</td></tr>
+<tr><td>Water</td><td>Fire</td><td>Steam Cloud, which applies Wet</td></tr>
+<tr><td>Ice</td><td>Fire</td><td>Water surface</td></tr>
+<tr><td>Ice</td><td>—</td><td>Prone and Difficult Terrain on the creatures in it</td></tr>
+<tr><td>Oil</td><td>Fire</td><td>An explosion, then a Fire surface</td></tr>
+<tr><td>Alcohol</td><td>Fire</td><td>Fire surface</td></tr>
+<tr><td>Alcohol</td><td>Cold</td><td>Ice surface</td></tr>
+</table>
+<p class="cite">Source: <a href="https://bg3.wiki/wiki/Surfaces">bg3.wiki, Surfaces</a>. The Steam Cloud applies Wet: <a href="https://bg3.wiki/wiki/Wet_(Condition)">bg3.wiki, Wet</a>.</p>
+
+<h2>Spell damage by type</h2>
+<table>
+<tr><th>Spell</th><th>Damage</th><th>Type</th><th class="num">Average</th><th>Note</th></tr>
+<tr><td>Chromatic Orb: Thunder</td><td>3d8</td><td>Thunder</td><td class="num">13.5</td><td>Attack roll. No surface.</td></tr>
+<tr><td>Chromatic Orb: Acid</td><td>2d8</td><td>Acid</td><td class="num">9</td><td>Attack roll. Creates a surface.</td></tr>
+<tr><td>Chromatic Orb: Cold</td><td>2d8</td><td>Cold</td><td class="num">9</td><td>Attack roll. Creates an Ice surface.</td></tr>
+<tr><td>Chromatic Orb: Fire</td><td>2d8</td><td>Fire</td><td class="num">9</td><td>Attack roll. Creates a surface.</td></tr>
+<tr><td>Chromatic Orb: Lightning</td><td>2d8</td><td>Lightning</td><td class="num">9</td><td>Attack roll. Creates Electrified Water.</td></tr>
+<tr><td>Chromatic Orb: Poison</td><td>2d8</td><td>Poison</td><td class="num">9</td><td>Attack roll. Creates a surface.</td></tr>
+<tr><td>Magic Missile</td><td>3 × (1d4 + 1)</td><td>Force</td><td class="num">10.5</td><td>No attack roll. The darts always hit.</td></tr>
+<tr><td>Ray of Frost</td><td>1d8</td><td>Cold</td><td class="num">4.5</td><td>Cantrip. Attack roll. Reduces Movement Speed by 3 m.</td></tr>
+</table>
+<p class="cite">Sources: <a href="https://bg3.wiki/wiki/Chromatic_Orb">Chromatic Orb</a>, <a href="https://bg3.wiki/wiki/Chromatic_Orb:_Lightning">Chromatic Orb: Lightning</a>, <a href="https://bg3.wiki/wiki/Chromatic_Orb:_Cold">Chromatic Orb: Cold</a>, <a href="https://bg3.wiki/wiki/Magic_Missile">Magic Missile</a>, <a href="https://bg3.wiki/wiki/Ray_of_Frost">Ray of Frost</a>. Upcasting adds 1d8 for each spell slot level above 1.</p>
+
+<h2>Worked example: the value of the element</h2>
+<table>
+<tr><th>Cast</th><th>Target state</th><th class="num">Average before</th><th class="num">Average after</th></tr>
+<tr><td>Chromatic Orb: Lightning, 2d8</td><td>Normal</td><td class="num">9</td><td class="num">9</td></tr>
+<tr><td>Chromatic Orb: Lightning, 2d8</td><td>Wet, so vulnerable</td><td class="num">9</td><td class="num">18</td></tr>
+<tr><td>Chromatic Orb: Fire, 2d8</td><td>Resistant to Fire</td><td class="num">9</td><td class="num">4.25</td></tr>
+<tr><td>Chromatic Orb: Thunder, 3d8</td><td>Normal</td><td class="num">13.5</td><td class="num">13.5</td></tr>
+<tr><td>Magic Missile, 3 × (1d4 + 1)</td><td>Normal</td><td class="num">10.5</td><td class="num">10.5</td></tr>
+</table>
+<p class="cite">The resisted average is 4.25 and not 4.5. Resistance rounds down, and the rounding removes 0.25 damage on average over the 64 results of 2d8.</p>
+
+<h2>Verified creature modifiers</h2>
+<table>
+<tr><th>Creature</th><th>Modifiers</th><th>Source</th></tr>
+<tr><td>Skeleton</td><td>Vulnerable to Bludgeoning. Immune to Poison.</td><td><a href="https://bg3.wiki/wiki/Skeleton">wiki</a></td></tr>
+<tr><td>Phase Spider</td><td>Resistant to Poison.</td><td><a href="https://bg3.wiki/wiki/Phase_Spider">wiki</a></td></tr>
+<tr><td>Wood Woad</td><td>Resistant to Piercing and Bludgeoning. Vulnerable to Fire.</td><td><a href="https://bg3.wiki/wiki/Wood_Woad">wiki</a></td></tr>
+<tr><td>Mud Mephit</td><td>Immune to Poison.</td><td><a href="https://bg3.wiki/wiki/Mud_Mephit">wiki</a></td></tr>
+</table>
+<p>Goblins and gnolls are races, not single creatures. Their race pages list no resistance and no vulnerability. Examine each variant in the game. <span class="cite">Sources: <a href="https://bg3.wiki/wiki/Goblin">bg3.wiki, Goblin</a> and <a href="https://bg3.wiki/wiki/Gnoll">bg3.wiki, Gnoll</a>.</span></p>
+
+<nav class="links">
+  <a href="../lessons/0003-damage-types-and-resistances.html">Lesson 3</a>
+  <a href="../RESOURCES.md">Resources</a>
+</nav>
+</main>
+</body>
+</html>

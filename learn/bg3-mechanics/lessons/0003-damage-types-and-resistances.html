@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 3: Damage types and resistances</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<p class="kicker">BG3 Mechanics · Lesson 3 · about 10 minutes</p>
+<h1>Damage types and resistances</h1>
+<p class="lede">A hit that lands can still deal half damage, or no damage at all. The target decides this, not your roll. This lesson teaches you to read the resistances of the target before you cast, to pick a damage type that the target does not resist, and to create a vulnerability on purpose with water.</p>
+
+<h2>The 13 damage types</h2>
+<p>Baldur's Gate 3 has 13 damage types in three groups. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Damage_types">bg3.wiki, Damage types</a>.</span></p>
+<table>
+<tr><th>Group</th><th>Types</th></tr>
+<tr><td>Physical</td><td>Bludgeoning, Piercing, Slashing</td></tr>
+<tr><td>Elemental</td><td>Acid, Cold, Fire, Lightning, Poison, Thunder</td></tr>
+<tr><td>Other</td><td>Force, Necrotic, Psychic, Radiant</td></tr>
+</table>
+<p>Every damage instance in the game carries exactly one of these labels. The label decides which of the three modifiers below applies.</p>
+
+<h2>The three modifiers</h2>
+<div class="formula">resistance → damage ÷ 2, rounded down
+vulnerability → damage × 2
+immunity → damage = 0</div>
+<p>The wiki gives the resistance rule in one sentence: "<i>Resistance</i> means the total damage taken from a type of damage is <i>halved</i> (rounded down)." <span class="cite">Source: <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki, Resistances</a>.</span></p>
+<p>Three rules control how the modifiers combine. Learn all three.</p>
+<ul>
+  <li>Multiple resistances to the same damage type do not stack. Two sources give the same half damage as one source.</li>
+  <li>Resistance and vulnerability to the same damage type cancel each other. The target then takes normal damage.</li>
+  <li>Immunity ignores both of the other modifiers. "<i>Immunity</i> means the total damage taken from a type of damage is <i>reduced to 0</i>. This means the creature takes no damage of that type, even if another effect applies vulnerability to the same type."</li>
+</ul>
+<p class="cite">Sources: <a href="https://bg3.wiki/wiki/Damage_types">bg3.wiki, Damage types</a> and <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki, Resistances</a>.</p>
+<div class="tool" data-damagecalc="9"></div>
+<p class="aside">Set the base damage to 9 and step through the five target states. Note two results. Immunity turns a good roll into nothing. "Resistant and vulnerable" returns the full 9, because the two modifiers cancel. Note also that the calculator rounds down. Resistance against 9 damage gives 4, not 4.5.</p>
+
+<h2>How to read the Examine panel</h2>
+<p>Hover the cursor over an enemy and press <b>T</b>. This opens the Examine panel. <span class="cite">Default keybinding "Examine / Pin Tooltip": <a href="https://bg3.wiki/wiki/Options">bg3.wiki, Options</a>.</span></p>
+<p>The panel shows one icon for each damage type. An arrow on an icon marks a modifier. The colour of the arrow tells you which damage sources the modifier covers. The wiki states it directly:</p>
+<div class="formula">"resistance is indicated by an upwards blue and / or grey arrow on the
+corresponding element. Grey indicates that non-magical sources of damage
+are reduced, and blue indicates that magical sources of damage are reduced."</div>
+<p class="cite">Source: <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki, Resistances</a>.</p>
+<p>Vulnerability uses a downward red arrow. Immunity uses a yellow outline around the shield of the damage type. A grey outline marks immunity to non-magical sources only. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki, Resistances</a>.</span></p>
+<p>The magical and non-magical split matters for you. Spells are magical sources of damage, and so are weapons of uncommon rarity and above. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki, Resistances</a>.</span> Your Sorcerer therefore reads the <b>blue</b> arrows. A grey arrow alone does not reduce your spell damage. It does reduce the damage from a common weapon in the hands of a melee companion.</p>
+
+<h2>Three verified Act 1 examples</h2>
+<p>Do not guess the resistances of an enemy. Check the Examine panel, or check the creature page on the wiki. These three creature pages are verified.</p>
+<table>
+<tr><th>Creature</th><th>Modifiers</th><th>What to cast</th><th>Source</th></tr>
+<tr><td>Skeleton</td><td>Vulnerable to Bludgeoning. Immune to Poison.</td><td>Any type except Poison. Bludgeoning is best.</td><td><a href="https://bg3.wiki/wiki/Skeleton">wiki</a></td></tr>
+<tr><td>Phase Spider</td><td>Resistant to Poison.</td><td>Any type except Poison.</td><td><a href="https://bg3.wiki/wiki/Phase_Spider">wiki</a></td></tr>
+<tr><td>Wood Woad</td><td>Resistant to Piercing and Bludgeoning. Vulnerable to Fire.</td><td>Fire.</td><td><a href="https://bg3.wiki/wiki/Wood_Woad">wiki</a></td></tr>
+</table>
+<p>The Skeleton page states the reason: "Being composed purely of brittle bone, all skeletons are vulnerable to Bludgeoning damage and immune to Poison damage." <span class="cite">Source: <a href="https://bg3.wiki/wiki/Skeleton">bg3.wiki, Skeleton</a>.</span></p>
+
+<h2>Your flexible spell: Chromatic Orb</h2>
+<p>Chromatic Orb is a level 1 Evocation spell. The Sorcerer and the Wizard learn it at level 1. You choose the element when you cast it. The game lists a separate variant for each element: Acid, Cold, Fire, Lightning, Poison and Thunder. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Chromatic_Orb">bg3.wiki, Chromatic Orb</a>.</span></p>
+<p>The damage is not equal across the variants. Thunder deals 3d8. Acid, Cold, Fire, Lightning and Poison each deal 2d8 and create a surface. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Chromatic_Orb">bg3.wiki, Chromatic Orb</a>.</span> The Lightning variant creates an Electrified Water surface. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Chromatic_Orb:_Lightning">bg3.wiki, Chromatic Orb: Lightning</a>.</span> The Cold variant creates an Ice surface. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Chromatic_Orb:_Cold">bg3.wiki, Chromatic Orb: Cold</a>.</span></p>
+<p class="aside">A note before you plan around it: many summaries give Chromatic Orb as 3d8 for every element. That is wrong. Only the Thunder variant deals 3d8. The five other variants deal 2d8 and add a surface. Treat the extra d8 on Thunder as the price of the surface.</p>
+<p>Chromatic Orb needs an attack roll, so a resistance and a miss can both take the damage away. Magic Missile removes one of those two risks. It deals Force damage, it fires three darts of 1d4 + 1, and the darts always hit. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Magic_Missile">bg3.wiki, Magic Missile</a>.</span> Check the Force icon in the Examine panel. If that icon has no arrow, Magic Missile is your answer to an enemy that resists every element.</p>
+
+<h2>The Wet combination</h2>
+<p>You can create a vulnerability. The Wet condition changes the target as follows. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Wet_(Condition)">bg3.wiki, Wet</a>.</span></p>
+<ul>
+  <li>The target becomes vulnerable to Lightning damage and Cold damage. Both types then deal double damage.</li>
+  <li>The target becomes resistant to Fire damage. Fire then deals half damage.</li>
+  <li>The target becomes immune to Burning and to Wild Magic: Burning.</li>
+</ul>
+<p>Three more rules from the same page control the edge cases:</p>
+<ul>
+  <li>A Wet creature that already resists Lightning or Cold loses that resistance. It does not become vulnerable. "Wet entities who are resistant to Lightning or Cold damage have their resistances negated instead of becoming vulnerable."</li>
+  <li>A Chilled creature that becomes Wet turns into a Frozen creature. "If a already chilled creature is made wet, both conditions are replaced with Frozen."</li>
+  <li>Wet ends normal invisibility at once. "Becoming wet breaks normal invisibility immediately." Do not make your hidden Rogue Wet.</li>
+</ul>
+<p>Warning: Wet also makes your own party vulnerable to Lightning and Cold. Place the water on the enemy, and keep your melee characters out of it.</p>
+
+<h3>How to apply Wet</h3>
+<p>Deep water and steam clouds apply Wet. The spell Create Water applies Wet. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Wet_(Condition)">bg3.wiki, Wet</a>.</span></p>
+<p>Create or Destroy Water is a level 1 Transmutation spell with a 4 m radius. The Cleric and the Druid learn it at level 1. A Conjuration School Wizard gets the Create Water variant at level 2, once per Short Rest and with no spell slot. A Storm Sorcery Sorcerer gets it at level 6. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Create_or_Destroy_Water">bg3.wiki, Create or Destroy Water</a>.</span></p>
+<p>Read that list against your party. Your Sorcerer at level 2 does not have this spell. Gale is an Evocation Wizard, not a Conjuration Wizard, so Gale does not have it either. A Cleric companion or a Druid companion is your source of water. Send the water first, then cast the Lightning orb.</p>
+
+<h3>The surface chain</h3>
+<p>Water on the ground is also a surface, and surfaces react to elements. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Surfaces">bg3.wiki, Surfaces</a>.</span></p>
+<table>
+<tr><th>Surface</th><th>Damage applied</th><th>Result</th></tr>
+<tr><td>Water</td><td>Lightning</td><td>Electrified Water surface</td></tr>
+<tr><td>Water</td><td>Cold</td><td>Ice surface</td></tr>
+<tr><td>Water</td><td>Fire</td><td>Steam Cloud</td></tr>
+<tr><td>Ice</td><td>—</td><td>Prone and Difficult Terrain</td></tr>
+<tr><td>Oil</td><td>Fire</td><td>Explosion, then a Fire surface</td></tr>
+<tr><td>Alcohol</td><td>Fire</td><td>Fire surface</td></tr>
+</table>
+<p>The Steam Cloud is useful. It applies Wet, so a fire spell into water still sets up your next Lightning spell. <span class="cite">Source: <a href="https://bg3.wiki/wiki/Wet_(Condition)">bg3.wiki, Wet</a>.</span></p>
+
+<h2>The math, one table</h2>
+<p>Chromatic Orb: Lightning deals 2d8. The average of 2d8 is 9. Chromatic Orb: Thunder deals 3d8, and the average of 3d8 is 13.5. Compare the outcomes.</p>
+<table>
+<tr><th>Cast</th><th>Target state</th><th class="num">Average before</th><th class="num">Average after</th></tr>
+<tr><td>Chromatic Orb: Lightning, 2d8</td><td>Normal</td><td class="num">9</td><td class="num">9</td></tr>
+<tr><td>Chromatic Orb: Lightning, 2d8</td><td>Wet, so vulnerable</td><td class="num">9</td><td class="num">18</td></tr>
+<tr><td>Chromatic Orb: Fire, 2d8</td><td>Resistant to Fire</td><td class="num">9</td><td class="num">4.25</td></tr>
+<tr><td>Chromatic Orb: Thunder, 3d8</td><td>Normal</td><td class="num">13.5</td><td class="num">13.5</td></tr>
+<tr><td>Magic Missile, 3 × (1d4 + 1)</td><td>Normal</td><td class="num">10.5</td><td class="num">10.5</td></tr>
+</table>
+<p>One choice of element moves the result from 4.25 to 18. That is a factor of 4. No other decision on your turn at level 2 changes the damage by that much.</p>
+<p class="aside">Why 4.25 and not 4.5? Resistance rounds down after each halving. Over all 64 results of 2d8, the rounding removes 0.25 damage on average. Halve first, then round down. Do not round the average.</p>
+
+<h2>Practice: one Examine, one element</h2>
+<p>Do this in your next fight. Complete all four steps before you cast.</p>
+<ul>
+  <li>Hover the first enemy and press T to open the Examine panel.</li>
+  <li>Read the damage type icons. Write down every blue arrow, every red arrow and every yellow outline.</li>
+  <li>Choose a Chromatic Orb element that has no arrow on it. If every element has an arrow, cast Magic Missile for Force damage.</li>
+  <li>If a Cleric or a Druid is in your party, cast Create Water on the enemy first, then cast Chromatic Orb: Lightning. Read the damage number in the combat log and confirm that it is double.</li>
+</ul>
+
+<div class="quiz" data-quiz='{"q":"The Examine panel shows a blue upward arrow on the Fire icon. You cast a fire spell at that enemy. What happens to the damage?","options":["The damage is doubled","The damage is halved","The damage is unchanged","The damage is removed"],"answer":1,"why":"A blue upward arrow marks resistance to magical sources of damage. A spell is a magical source, so resistance halves the damage and rounds down."}'></div>
+
+<div class="quiz" data-quiz='{"q":"Your Cleric casts Create Water on an enemy. You then hit that enemy with Chromatic Orb: Lightning for 9 damage. How much damage does the enemy take?","options":["4 damage total","9 damage total","18 damage total","27 damage total"],"answer":2,"why":"Wet gives vulnerability to Lightning damage. Vulnerability doubles the damage, so 9 becomes 18."}'></div>
+
+<div class="quiz" data-quiz='{"q":"A creature is already resistant to Lightning damage. You make that creature Wet. What is the result for lightning?","options":["The creature becomes vulnerable to lightning","The creature loses its lightning resistance","The creature becomes immune to lightning","The creature keeps its lightning resistance"],"answer":1,"why":"Wet negates an existing Lightning or Cold resistance instead of adding vulnerability. The creature then takes normal lightning damage."}'></div>
+
+<div class="quiz" data-quiz='{"q":"A skeleton is immune to Poison damage. An effect also makes the skeleton vulnerable to Poison damage. What does poison damage do now?","options":["Zero poison damage","Half poison damage","Full poison damage","Double poison damage"],"answer":0,"why":"Immunity reduces the damage to 0, even when another effect applies vulnerability to the same type. Vulnerability and resistance do not affect immunity."}'></div>
+
+<h2>Primary source</h2>
+<p>Read the <a href="https://bg3.wiki/wiki/Resistances">bg3.wiki Resistances page</a>. It is short. It shows the exact icons of the Examine panel next to each rule, so you can match the page against your screen. Read the <a href="https://bg3.wiki/wiki/Wet_(Condition)">Wet page</a> after it. Together the two pages take about ten minutes.</p>
+
+<div class="followup">Do you have a question? Ask me. I am your teacher for this course. Tell me the resistances of the first enemy that you examine, and I will tell you which spell to cast against it.</div>
+
+<nav class="links">
+  <a href="../reference/damage-types.html">Reference: damage types</a>
+  <a href="0002-saving-throws-and-spell-save-dc.html">Previous lesson: saving throws</a>
+  <a href="../MISSION.md">Mission</a>
+  <a href="../RESOURCES.md">Resources</a>
+</nav>
+</main>
+<script src="../assets/damage-calc.js"></script>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

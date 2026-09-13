@@ -82,6 +82,34 @@
   Use for: default keybindings. "Examine / Pin Tooltip" is T.
 - [bg3.wiki creature pages: Skeleton, Phase Spider, Wood Woad, Mud Mephit](https://bg3.wiki/wiki/Skeleton)
   Verified resistance stat blocks for Act 1 enemies. Also [Phase Spider](https://bg3.wiki/wiki/Phase_Spider), [Wood Woad](https://bg3.wiki/wiki/Wood_Woad), [Mud Mephit](https://bg3.wiki/wiki/Mud_Mephit). The [Goblin](https://bg3.wiki/wiki/Goblin) and [Gnoll](https://bg3.wiki/wiki/Gnoll) pages are race pages and list no resistances.
+- [bg3.wiki: Actions](https://bg3.wiki/wiki/Actions)
+  Use for: the list of common actions and common bonus actions, and the rule that each creature has 1 charge of each resource per turn. BG3 makes Shove and Jump bonus actions, unlike tabletop.
+- [bg3.wiki: Resources](https://bg3.wiki/wiki/Resources)
+  Use for: the four common turn resources (Action, Bonus Action, Reaction, Movement Speed) and the recharge rule.
+- [bg3.wiki: Movement speed](https://bg3.wiki/wiki/Movement_speed)
+  Use for: the base speeds of 7.5 m, 9 m and 10.5 m by race, and the doubling from the Dash action.
+- [bg3.wiki: Difficult Terrain](https://bg3.wiki/wiki/Difficult_Terrain)
+  Use for: the halved movement speed, stated as 2 m of movement for each 1 m moved.
+- [bg3.wiki: Reaction](https://bg3.wiki/wiki/Reaction)
+  Use for: the 1 reaction per turn limit, the recharge at the start of the turn, and the features that do not spend the resource.
+- [bg3.wiki: Reactions](https://bg3.wiki/wiki/Reactions)
+  Use for: the Reactions tab, the enabled checkbox and the "Ask" setting, the full list of reactions, and the events that reactions ignore.
+- [bg3.wiki: Opportunity Attack](https://bg3.wiki/wiki/Opportunity_Attack)
+  Use for: the trigger when a creature moves out of reach, the prevention by the Disengage action, and the conditions that block it.
+- [bg3.wiki: Shield (spell)](https://bg3.wiki/wiki/Shield_(spell))
+  Use for: the reaction cost, the +5 Armour Class, the Magic Missile immunity, and the duration until the start of your next turn.
+- [bg3.wiki: Metamagic](https://bg3.wiki/wiki/Metamagic)
+  Use for: the sorcery point cost and effect of each Metamagic option. Note: the page states no limit on two levelled spells in one turn with Quickened Spell.
+- [bg3.wiki: Witch Bolt](https://bg3.wiki/wiki/Witch_Bolt)
+  Use for: the concentration requirement, the action cost, and the Sorcerer class level 1 access.
+- [bg3.wiki: Hex](https://bg3.wiki/wiki/Hex)
+  Use for: a concentration spell with a bonus action cost, and the reapply rule after the target dies.
+- [bg3.wiki: Bless](https://bg3.wiki/wiki/Bless)
+  Use for: the concentration requirement and the +1d4 bonus to attack rolls and saving throws.
+- [bg3.wiki: Cloud of Daggers](https://bg3.wiki/wiki/Cloud_of_Daggers)
+  Use for: the concentration requirement and the Sorcerer class level 3 access.
+- [bg3.wiki: Haste](https://bg3.wiki/wiki/Haste)
+  Use for: the concentration requirement, the extra action per turn, and the Lethargic condition after the spell ends.
 - [D&D 5e Basic Rules, 2018 PDF from Wizards of the Coast](https://media.wizards.com/2018/dnd/downloads/DnD_BasicRules_2018.pdf)
   Chapter 9 (Combat) and Chapter 10 (Spellcasting) are the tabletop rules BG3 is built on. Use for: the underlying logic when a BG3 tooltip is terse. Check bg3.wiki whenever BG3 might differ.
 
