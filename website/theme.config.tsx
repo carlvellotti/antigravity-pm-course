@@ -88,20 +88,18 @@ export default {
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
 
-        {/* TODO: Add Google Analytics when ready */}
-        {/*
-        <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+        {/* Google Analytics — antigravityforpms.com GA4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7X0K6KBQQD"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'YOUR_GA_ID');
+              gtag('config', 'G-7X0K6KBQQD');
             `
           }}
         />
-        */}
 
         {/* PostHog (alongside GA; shared project with fullstackpm.com) */}
         <script
